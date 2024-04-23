@@ -30,7 +30,7 @@ num1= num2= num3 = 2 + 3
 // console.log(num3);
 
 
-/************************************  PREFIX AND POSTFIX INCREMENTS */
+/************************************  PREFIX AND POSTFIX INCREMENTS **********************************************/
 
 let x = 3
 const y = x++
