@@ -150,3 +150,27 @@ const newnum = []
 
 const no1 = no.reduce((acc,currval)=> {return acc + currval},1)
  console.log(no1);
+
+
+
+ const shoppingcart = [
+  {
+    item: "pents",
+    price: 1500
+  },
+  {
+    item: "shirts",
+    price: 2000
+  },
+  {
+    item: "jacket",
+    price: 5000
+  },
+  {
+    item: "belt",
+    price: 500
+  },
+ ]
+
+ const totalprice = shoppingcart.reduce((acc, item) =>  acc+ item.price,0)
+ console.log(totalprice);
