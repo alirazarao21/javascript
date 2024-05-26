@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event In HTML</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+  <h2> Amazing Images</h2>
+
+    <div>
+        <ol class="images">
+            <li><img width="200px" id="photoshop" src="" alt="photoshop"> </li>
+            <li><img width="200px" id="photoshop" src="" alt="Japan"> </li>
+            <li><img width="200px" id="photoshop" src="" alt="Lahore"> </li>
+            <li><img width="200px" id="MULTAN" src="" alt="Multan" > </li>
+            <li><img width="200px" id="photoshop" src="" alt="karachi"> </li>
+            <li><img width="200px" id="photoshop" src="" alt="Babar Azam"> </li>
+            <li><img width="200px" id="photoshop" src="" alt="Shaheen the Eagle "> </li>
+            <li><a style="color:rgb(12, 12, 29);" href="www.google.com">Google</a></li>
+
+        </ol>
+    </div>
+</body>
+
+<script>
+
+    // events of old javascript
+    //attachEvent()
+    // jQuery - onclick
+
+
+    document.getElementById('MULTAN').onclick = function(){
+        alert('Multan city')
+    }
+      
+    document.getElementById('MULTAN').addEventListener('click', function(e){
+        console.log(e);
+        alert('Best iamge ')
+    }, false)
+
+    // Other events to study 
+
+    // type , timestamp, defaultprevent , target , toelement, srcelement , currenttarget 
+    //clientx , clienty, screenx , screenY
+    //altkey, ctrlkey, shiftkey, keycode...
+
+</script>
+</html>

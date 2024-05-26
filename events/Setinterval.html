@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval in js </title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <h1>Chai and Code </h1>
+    <button id="Start">Start</button>
+    <button id="Stop">Stop</button>
+
+</body>
+<script>
+    // const saydate = function(name){
+    //     console.log(name,Date.now());
+    // }
+    //  const intervalid = setInterval(saydate,1000, "Ali")
+
+    //  clearInterval(intervalid)
+    //  console.log("STOPPED");
+
+    const start = document.getElementById('Start').addEventListener('click',function(){
+        const stop= setInterval(function(){
+            console.log("Ali raza Rao",Date.now());
+            document.getElementById('Stop').addEventListener('click',function(){
+                clearInterval(stop)
+                console.log("Stopped");
+            })
+        },1000)
+    })
+
+    // document.getElementById('Stop').addEventListener('click',function(){
+    //     clearInterval(start)
+    //     console.log("Stopped")
+    // })
+</script>
+</html>

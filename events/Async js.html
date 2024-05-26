@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two projects with Async JS</title>
+</head>
+<body style="background-color: #414141; color: azure;">
+    <h1>Chai and Code </h1>
+    <button id="stop">Stop</button>
+</body>
+ <script>
+    // setTimeout(function(){
+    //     console.log("Ali Raza Rao");
+    // },2000)
+
+    const sayAli = function () {
+        console.log("Ali Raza Rao");
+    }
+
+    const changeh1 = function(){
+        document.querySelector('h1').innerHTML = "Best Fast Bowler of Pakpattan in 2019 to 2021"
+    }
+        const changeme = setTimeout(changeh1,1000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeme)
+        console.log("STOPPED");
+    })
+    
+ </script>
+</html>
